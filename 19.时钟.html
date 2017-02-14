@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid red;
+        }
+    </style>
+    <script type="text/javascript" src="js/clock.js"></script>
+</head>
+<body>
+    <canvas width="800" height="600"></canvas>
+</body>
+</html>
+<script>
+    var canvas = document.querySelector("canvas");
+    var ctx = canvas.getContext("2d");
+
+    var clock = new Clock({
+        ctx: ctx,
+        bigX: canvas.width / 2,
+        bigY: canvas.height / 2,
+        bigRadius: 180
+    })
+</script>
